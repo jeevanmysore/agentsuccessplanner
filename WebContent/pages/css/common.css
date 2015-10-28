@@ -1,0 +1,1359 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+html{font-size:62.5%;}
+body
+	{
+		-webkit-text-size-adjust: none;
+		-moz-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+		margin:0 auto;
+		height:100%;
+		background:url('../images/bg.png') repeat-x;
+		background-size: 100% 100%;
+		width:100%;
+	}
+	.header
+	{
+	height:100%;
+	margin-bottom:2%;
+	}
+	/* ---------- LOGO----------*/
+	.logo
+	{
+	margin:0 auto;
+	width:72px; 	
+	height:61px;
+	padding-top:20px;
+	padding-bottom:2px;
+	}
+	/* Logo image */
+	.logo_img
+	{
+	height:100%;
+	width:100%;
+	}
+	.logo_subtitle
+	{
+	width:100%;
+	height: 8%;
+	}
+	.logo_subtitle_img
+	{
+	width:100%;
+	height:100%;
+	margin :0 auto;
+	}
+	.content_top
+	{
+	width: 50%;
+	height: 10%;
+	position: absolute;
+	top: -5%;
+	right: 5%;
+	background:url('../images/login_button.png') no-repeat ;
+	background-size: 100% 100%;
+	}
+	.login
+	{
+	padding-top:7%;
+	Font-Family :arial;
+	Font-size: 1.5em;
+	Font-weight:normal;
+	color:white;
+	text-align:center;
+	}
+	.username
+	{
+	width:100%;
+	padding-top:5%;
+	padding-left:20px;
+	Font-Family :arial;
+	Font-size: 1.5em;
+	Font-weight: regular;
+	color :white;
+	}
+	.username_input
+	{
+	height:45px;
+	width: 80%;
+	position: relative;
+	left: 20px;
+	top: 8px;
+	font-size:1.5em;
+	padding-left:10px;
+	background:url('../images/input_field.png') ;
+	background-size: 100% 100%;
+	border:none;
+	}
+	
+	.password
+	{
+	width:100%;
+	padding-top:5%;
+	padding-left:20px;
+	Font-Family :Arial;
+	Font-size: 1.5em;
+	Font-weight: regular;
+	color :white;
+	}
+	.password_input
+	{
+	height:45px;
+	width: 80%;
+	position: relative;
+	left: 20px;
+	top: 8px;
+	padding-left:10px;
+	Font-size: 1.5em;
+	font-weight: normal;
+	background:url('../images/input_field.png') ;
+	background-size: 100% 100% ;
+	border:none;
+	}
+	.content
+	{
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	background:url('../images/top_bg.png')no-repeat ;
+	background-size: 100% 100%;
+	}
+	
+	.go
+	{
+	height: 50%;
+	width: 40%;
+	background-size: 100% 100%;
+	position: relative;
+	left: 7%;
+	top: 17px;
+	padding-top: 10px;
+	float: left;
+	background: url('../images/register_button.png');
+	}
+	.go input[type="submit"]{
+		background: transparent;
+		border: none;
+		color: white;
+		cursor: pointer;
+		height: 10%;
+		width: 100%;
+		font-size: 1.5em;
+	}
+	.go_text
+	{
+	Font-Family :Helvetica;
+	Font-weight :normal;
+	color :white;
+	text-align: left;
+	margin-right: 5%;
+	margin-top: 5%;
+	}
+	
+	.content_bottom
+	{
+	width: 100%;
+	left: -2px;
+	height: 150px;
+	position: absolute;
+	background: url('../images/bottom_ bg.png')no-repeat;
+	background-size: 100% 100%;
+	clear: both;
+	}	
+	.already
+	{
+	width : 48%;
+	Font-Family: Helvetica;
+	Font-size: 20px;
+	Font-weight: normal;
+	color: white;
+	float : right;
+	margin : 5% 0 0 0;
+	}
+	.already1
+	{
+	Font-Family: Helvetica;
+	Font-size: 20px;
+	Font-weight: normal;
+	color: white;
+	text-align: right;
+	}
+	.bottom_img_text
+	{
+	color: white;
+	text-decoration: none;
+	position: relative;
+	top: 6px;
+	font-size: 1.5em;
+	}
+	.bottom_img_text
+	{
+	width:50px;
+	height:55 px;
+	Font-Family :Myriad Pro;
+	Font-size :22pt;
+	Font-weight:regular ;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	}
+	
+	.do
+	{
+	height: 35px;
+	width: 250px;
+	position: relative;
+	left: 355px;
+	top: -50px;
+	padding-top:7px;
+	}
+	.do_text
+	{
+	Font-Family :Arial;
+	Font-size:1.5em;
+	Font-weight:regular;
+	color :black;
+	text-align: center;
+	text-decoration:none;
+	}
+	/*radha:added the css for error msg*/	
+	.error_msg{
+	height: 100%;
+	width: 100%;
+	margin:auto;
+	}
+	.text_error{
+	width:100%;
+	height:35px;
+	margin:auto;
+	color:red;
+	text-align:center;
+	Font-Family :Arial;
+	Font-size:1em;
+	Font-weight:regular;
+	}
+	.register_radio{
+	width: 92%;
+	height: auto;
+	margin: auto;
+	margin-top: 35px;
+	color: white;
+	Font-Family :Arial;
+	Font-size:1.5em;
+	Font-weight:regular;
+	clear: both;
+	}
+	.big {
+		width:35px;
+	}
+	.hobby{
+		display: block;
+	}
+	/*----------style.css--------------------------------------*/
+	.button
+	{
+	margin:auto;
+	width:99%;
+	height:50%;
+	margin-bottom:5%;
+	}
+	.content_button1
+	{
+	margin:0 auto;
+	width:99%;
+	height:100%;
+	background:url('../images/red_buttonbg.png')no-repeat ;
+	background-size: 100% 100%;
+	display: inline-block;
+	cursor: pointer;
+	padding:2% 0;
+	}
+	.content_button1:active
+	{
+	width:99%;
+	height:50%;
+	background:url('../images/grey_buttonbg.png')no-repeat ;
+	background-size: 100% 100%;
+	}
+
+	.button_text
+	{
+	width:90%;
+	margin: 0 auto;
+	height:40%;
+	Font-Family:Verdana;
+	Font-Weight:bold;
+	Font-Size:1.7em;
+	Color:white;
+	text-decoration:none;
+	text-align:center;
+
+	}
+
+	.button2_text
+	{
+	width:90%;
+	margin: 0 auto;
+	height:40%;
+	Font-Family:Verdana;
+	Font-Weight:bold;
+	Font-Size:1.7em;
+	Color:white;
+	text-decoration:none;
+	text-align:center;
+
+	}
+	
+	.button3_text
+	{
+	width:90%;
+	margin: 0 auto;
+	height:40%;
+	Font-Family:Verdana;
+	Font-Weight:bold;
+	Font-Size:1.7em;
+	Color:white;
+	text-decoration:none;
+	text-align:center;
+
+	}
+	.user_content
+	{
+	margin-top:2%;
+	}
+	/* footer  */
+	.footer
+	{
+	margin-top:40px;
+	margin:0 auto;
+	width:97%;
+	border-style:solid;
+	border-width:2px;
+	border-color:black;
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;
+	border-bottom-right-radius:0em;
+	border-bottom-left-radius:0em;
+	}
+	.footer_upper
+	{
+	width:100%;
+	Height:60px;
+	}
+	.imgf
+	{
+	padding-top:20px;
+	padding-left:10px;
+	float:left;
+	}
+	.textf
+	{
+	Font-Family:Verdana;
+	Font-Weight:Regular;
+	Font-Size:2em;
+	Color:black;
+	padding-left:1%;
+	float:left;
+	padding-top:20px;
+	}
+	.footer_upper_left
+	{
+	width:60%;
+	Height:100%;
+	float:left;
+	}
+	.footer_upper_right
+	{
+	float:right;
+	width:40%;
+	Height:100%;
+	padding:0px;
+	}
+	.date
+	{
+	padding-top:20px;
+	float:right;
+	padding-right:10px;
+	Font-Family:Verdana;
+	Font-Weight:Regular;
+	Font-Size:2em;
+	Color:black;
+	}
+	/* footer-lower*/
+	.footer_lower
+	{
+	clear:both;
+	width:100%;
+	Height:60px;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	padding:0;
+	border:none;
+	}
+	.imgf2
+	{
+	padding-top:10px;
+	padding-left:10px;
+	float:left;
+	}
+	.textf2
+	{
+	padding-top:10px;
+	Font-Family:Verdana;
+	Font-Weight:Regular;
+	Font-Size:2em;
+	Color:black;
+	padding-left:1%;
+	float:left;
+	}
+	.footer_lower_left
+	{
+	width:80%;
+	Height:100%;
+	float:left;
+	}
+	.footer_lower_right
+	{
+	float:right;
+	width:20%;
+	Height:100%;
+	padding:0px
+	}
+	.day
+	{
+	float:right;
+	padding:10px 10px 0 0;
+	Font-Family:Verdana;
+	Font-Weight:Regular;
+	Font-Size:2em;
+	Color:black;
+	}
+/*----------------style.css----------------------------*/
+}
+
+@media only screen and (min-device-width: 768px) and (orientation: landscape) and (max-device-width: 998px){
+html{font-size:62.5%;}
+body
+	{
+		-webkit-text-size-adjust: none;
+		-moz-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+		margin:0 auto;
+		height:100%;
+		background:url('../images/bg.png') repeat-x;
+		background-size: 100% 100%;
+		width:100%;
+	}
+	.header
+	{
+	height:100%;
+	margin-bottom:2%;
+	}
+	/* ---------- LOGO----------*/
+	.logo
+	{
+	margin:0 auto;
+	width:72px; 	
+	height:61px;
+	padding-top:20px;
+	padding-bottom:2px;
+	}
+	/* Logo image */
+	.logo_img
+	{
+	height:100%;
+	width:100%;
+	}
+	.logo_subtitle
+	{
+	width:100%;
+	height: 8%;
+	}
+	.logo_subtitle_img
+	{
+	width:100%;
+	height:100%;
+	margin :0 auto;
+	}
+	.content_top
+	{
+	width: 50%;
+	height: 10%;
+	position: absolute;
+	top: -5%;
+	right: 5%;
+	background:url('../images/login_button.png') no-repeat ;
+	background-size: 100% 100%;
+	}
+	.login
+	{
+	padding-top:7%;
+	Font-Family :arial;
+	Font-size: 1.5em;
+	Font-weight:normal;
+	color:white;
+	text-align:center;
+	}
+	.username
+	{
+	width:100%;
+	padding-top:5%;
+	padding-left:20px;
+	Font-Family :arial;
+	Font-size: 1.5em;
+	Font-weight: regular;
+	color :white;
+	}
+	.username_input
+	{
+	height:45px;
+	width: 80%;
+	position: relative;
+	left: 20px;
+	top: 8px;
+	font-size:1.5em;
+	padding-left:10px;
+	background:url('../images/input_field.png') ;
+	background-size: 100% 100%;
+	border:none;
+	}
+	
+	.password
+	{
+	width:100%;
+	padding-top:5%;
+	padding-left:20px;
+	Font-Family :Arial;
+	Font-size: 1.5em;
+	Font-weight: regular;
+	color :white;
+	}
+	.password_input
+	{
+	height:45px;
+	width: 80%;
+	position: relative;
+	left: 20px;
+	top: 8px;
+	padding-left:10px;
+	Font-size: 1.5em;
+	font-weight: normal;
+	background:url('../images/input_field.png') ;
+	background-size: 100% 100% ;
+	border:none;
+	}
+	.content
+	{
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	background:url('../images/top_bg.png')no-repeat ;
+	background-size: 100% 100%;
+	}
+	
+	.go
+	{
+	height: 50%;
+	width: 40%;
+	background-size: 100% 100%;
+	position: relative;
+	left: 7%;
+	top: 17px;
+	padding-top: 10px;
+	float: left;
+	background: url('../images/register_button.png');
+	}
+	.go input[type="submit"]{
+		background: transparent;
+		border: none;
+		color: white;
+		cursor: pointer;
+		height: 10%;
+		width: 100%;
+		font-size: 1.5em;
+	}
+	.go_text
+	{
+	Font-Family :Helvetica;
+	Font-weight :normal;
+	color :white;
+	text-align: left;
+	margin-right: 5%;
+	margin-top: 5%;
+	}
+	
+	.content_bottom
+	{
+	width: 100%;
+	left: -2px;
+	height: 150px;
+	position: absolute;
+	background: url('../images/bottom_ bg.png')no-repeat;
+	background-size: 100% 100%;
+	clear: both;
+	}	
+	.already
+	{
+	width : 48%;
+	Font-Family: Helvetica;
+	Font-size: 20px;
+	Font-weight: normal;
+	color: white;
+	float : right;
+	margin : 5% 0 0 0;
+	}
+	.already1
+	{
+	Font-Family: Helvetica;
+	Font-size: 20px;
+	Font-weight: normal;
+	color: white;
+	text-align: right;
+	}
+	.bottom_img_text
+	{
+	color: white;
+	text-decoration: none;
+	position: relative;
+	top: 6px;
+	font-size: 1.5em;
+	}
+	.bottom_img_text
+	{
+	width:50px;
+	height:55 px;
+	Font-Family :Myriad Pro;
+	Font-size :22pt;
+	Font-weight:regular ;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	}
+	
+	.do
+	{
+	height: 35px;
+	width: 250px;
+	position: relative;
+	left: 355px;
+	top: -50px;
+	padding-top:7px;
+	}
+	.do_text
+	{
+	Font-Family :Arial;
+	Font-size:1.5em;
+	Font-weight:regular;
+	color :black;
+	text-align: center;
+	text-decoration:none;
+	}
+	/*radha:added the css for error msg*/	
+	.error_msg{
+	height: 100%;
+	width: 100%;
+	margin:auto;
+	}
+	.text_error{
+	width:100%;
+	height:35px;
+	margin:auto;
+	color:red;
+	text-align:center;
+	Font-Family :Arial;
+	Font-size:1em;
+	Font-weight:regular;
+	}
+	.register_radio{
+	width: 92%;
+	height: auto;
+	margin: auto;
+	margin-top: 35px;
+	color: white;
+	Font-Family :Arial;
+	Font-size:1.5em;
+	Font-weight:regular;
+	clear: both;
+	}
+	.big {
+		width:35px;
+	}
+	.hobby{
+		display: block;
+	}
+	/*----------style.css--------------------------------------*/
+	.button
+	{
+	margin:auto;
+	width:99%;
+	height:50%;
+	margin-bottom:5%;
+	}
+	.content_button1
+	{
+	margin:0 auto;
+	width:99%;
+	height:100%;
+	background:url('../images/red_buttonbg.png')no-repeat ;
+	background-size: 100% 100%;
+	display: inline-block;
+	cursor: pointer;
+	padding:2% 0;
+	}
+	.content_button1:active
+	{
+	width:99%;
+	height:50%;
+	background:url('../images/grey_buttonbg.png')no-repeat ;
+	background-size: 100% 100%;
+	}
+
+	.button_text
+	{
+	width:90%;
+	margin: 0 auto;
+	height:40%;
+	Font-Family:Verdana;
+	Font-Weight:bold;
+	Font-Size:1.7em;
+	Color:white;
+	text-decoration:none;
+	text-align:center;
+
+	}
+
+	.button2_text
+	{
+	width:90%;
+	margin: 0 auto;
+	height:40%;
+	Font-Family:Verdana;
+	Font-Weight:bold;
+	Font-Size:1.7em;
+	Color:white;
+	text-decoration:none;
+	text-align:center;
+
+	}
+	
+	.button3_text
+	{
+	width:90%;
+	margin: 0 auto;
+	height:40%;
+	Font-Family:Verdana;
+	Font-Weight:bold;
+	Font-Size:1.7em;
+	Color:white;
+	text-decoration:none;
+	text-align:center;
+
+	}
+	.user_content
+	{
+	margin-top:2%;
+	}
+	/* footer  */
+	.footer
+	{
+	margin-top:40px;
+	margin:0 auto;
+	width:97%;
+	border-style:solid;
+	border-width:2px;
+	border-color:black;
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;
+	border-bottom-right-radius:0em;
+	border-bottom-left-radius:0em;
+	}
+	.footer_upper
+	{
+	width:100%;
+	Height:60px;
+	}
+	.imgf
+	{
+	padding-top:20px;
+	padding-left:10px;
+	float:left;
+	}
+	.textf
+	{
+	Font-Family:Verdana;
+	Font-Weight:Regular;
+	Font-Size:2em;
+	Color:black;
+	padding-left:1%;
+	float:left;
+	padding-top:20px;
+	}
+	.footer_upper_left
+	{
+	width:60%;
+	Height:100%;
+	float:left;
+	}
+	.footer_upper_right
+	{
+	float:right;
+	width:40%;
+	Height:100%;
+	padding:0px;
+	}
+	.date
+	{
+	padding-top:20px;
+	float:right;
+	padding-right:10px;
+	Font-Family:Verdana;
+	Font-Weight:Regular;
+	Font-Size:2em;
+	Color:black;
+	}
+	/* footer-lower*/
+	.footer_lower
+	{
+	clear:both;
+	width:100%;
+	Height:60px;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	padding:0;
+	border:none;
+	}
+	.imgf2
+	{
+	padding-top:10px;
+	padding-left:10px;
+	float:left;
+	}
+	.textf2
+	{
+	padding-top:10px;
+	Font-Family:Verdana;
+	Font-Weight:Regular;
+	Font-Size:2em;
+	Color:black;
+	padding-left:1%;
+	float:left;
+	}
+	.footer_lower_left
+	{
+	width:80%;
+	Height:100%;
+	float:left;
+	}
+	.footer_lower_right
+	{
+	float:right;
+	width:20%;
+	Height:100%;
+	padding:0px
+	}
+	.day
+	{
+	float:right;
+	padding:10px 10px 0 0;
+	Font-Family:Verdana;
+	Font-Weight:Regular;
+	Font-Size:2em;
+	Color:black;
+	}
+/*----------------style.css----------------------------*/
+}
+
+
+/*---------------------------------------------------*/
+
+@media only screen and (min-device-width: 999px) {
+	body
+	{
+		margin:0 auto;
+		height:100%;
+		background:url('../images/bg.png')no-repeat ;
+		background-size: 100% ;
+		width:100%;
+	}
+	 .header
+	{
+	height:100%;
+	margin-bottom:30px;/*
+	border-style:solid;
+	border-width:5px;
+	border-color:red;*/
+	/*
+	background:url('../images/bg.png')no-repeat ;
+	background-size: 100% ;*/
+	}
+	/* ---------- LOGO----------*/
+	.logo
+	{
+	margin:0 auto;/*
+	border-style:solid;
+	border-width:1px;
+	border-color:red;*/
+	width:70px;
+	height:80px;
+	padding-top:20px;
+	padding-bottom:2px;
+	}
+	/* ---------- LOGO SUBTITLE----------*/
+	.logo_subtitle
+	{
+	width:100%;
+	text-align:center;
+	height:20px;/*
+	border-style:solid;
+	border-width:1px;
+	border-color:blue;*/
+	padding-bottom:35px;
+	padding-top:5px;
+	}
+	.logo_img
+	{
+	margin:0 auto;
+	}
+	.logo_subtitle_img
+	{
+	width:37%;
+	height:40px;
+	margin :0 auto;
+	/*padding-left:420px; */
+	}
+	.content_top
+	{
+	width: 45%;
+	height: 70px;
+	position: absolute;
+	top: -36px;
+	left: 50%;
+	/*border-style: solid;
+	border-width: 2px;
+	border-color: black;*/
+	background:url('../images/login_button.png')no-repeat ;
+	background-size: 100% 100% ;
+	}
+	.login
+	{
+	padding-top:18px;
+	Font-Family :Myriad Pro;
+	Font-size :1.4em;
+	Font-weight:regular ;
+	color:white;
+	text-align:center;
+	}
+	.username
+	{
+	height:20px;
+	width:100px;
+	padding-top:35px;
+	padding-left:20px;
+	Font-Family :Arial;
+	Font-size: 14pt;
+	Font-weight: regular;
+	color :white;
+	/* border-style: solid;
+	border-width: 2px;
+	border-color: red;*/
+	}
+	.username_input
+	{
+	height:50px;
+	width: 77%;
+	position: relative;
+	left: 20px;
+	top: 8px;
+	padding-left:10px;
+	font-size: 22px;
+	background:url('../images/input_field.png') ;
+	background-size: 100% 100% ;
+	border:none;
+	}
+	
+	.password
+	{
+	height:20px;
+	padding-top:35px;
+	padding-left:20px;
+	Font-Family :Arial;
+	Font-size: 14pt;
+	Font-weight: regular;
+	color :white;
+	/* border-style: solid;
+	border-width: 2px;
+	border-color: red;*/
+	}
+	.password_input
+	{
+	height:50px;
+	width: 77%;
+	position: relative;
+	left: 20px;
+	padding-left:10px;
+	top: 8px;
+	Font-size: 22px;
+	background:url('../images/input_field.png') ;
+	background-size: 100% 100% ;
+	border:none;
+	}
+	.content
+	{
+	width: 37%;
+	height: 675px;
+	position: relative;
+   /* border-style: solid;
+	border-width: 2px;
+	border-color: black;*/
+	margin: 0 auto;
+	background:url('../images/top_bg.png')no-repeat ;
+	background-size: 100% 100% ;
+	}
+	
+	.go
+	{
+	height: 55px;
+	width: 120px;
+	position: relative;
+	left: 7%;
+	top: 17px;
+	padding-top: 10px;
+	background: url('../images/register_button.png');
+	background-size: 100% 100%;
+	padding-left: 0px;
+	}
+		
+	.go input[type="submit"]{
+	background: transparent;
+	border: none;
+	color: white;
+	cursor: pointer;
+	Font-size: 12pt;
+	position: relative;
+	top: -4px
+		}
+	
+	.go_text
+	{
+	Font-Family :Helvetica(OT1);
+	Font-size : 22pt;
+	Font-weight : CE Bold COndensed;
+	color :white;
+	text-align:center;
+	height: 100%;
+	width: 100%;
+	}
+	
+	.already
+	{
+	/*height: 20px;
+	width: 200px;
+	left: 250px;
+	top: -184px;
+	positon: absolute;
+	Font-Family: Helvetica(OT1);
+	Font-size: 20px;
+	Font-weight: CE Bold COndensed;
+	color: white;*/
+	}
+	.already1
+	{
+	position: absolute;
+	top: 28%;
+	left: 47%;
+	width:48%;
+	Font-Family :Helvetica;
+	Font-size : 20px;
+	Font-weight : CE Bold COndensed;
+	color :white;
+	text-align: left;
+	}
+	.content_bottom
+	{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	left:-2px;
+	bottom: -74px;
+	background: url('../images/bottom_ bg.png')no-repeat;
+	background-size: 100% 100%;
+	}
+	.bottom_img
+	{
+	height: 55px;
+	width: 92px;
+	position: relative;
+	left: 39px;
+	top: 17px;
+	padding-top: 10px;
+	background: url('../images/register_button.png');
+	background-size: 100% 100%;
+	padding-left: 25px;
+	}
+	.bottom_img_text
+	{
+	width:50px;
+	height:55 px;
+	Font-Family :Myriad Pro;
+	Font-size :12pt;
+	Font-weight:regular ;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	}
+	.do
+	{
+	height:25px;
+	width:150px;
+	position:relative;
+	left:255px;
+	top:-50px;
+	border-style:solid;
+	border-width:1px;
+	border-color:red;
+	padding-top:7px;
+	}
+	.do_text
+	{
+	Font-Family :Arial;
+	Font-size:14pt;
+	Font-weight:regular;
+	color :black;
+	text-align: center;
+	text-decoration:none;
+	}
+	/*radha:added the css for error msg*/	
+	.error_msg{
+	height: 35px;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 10px;
+	}
+	.text_error{
+	width:37%;
+	margin:auto;
+	height:30px;
+	
+	text-align:center;
+	Font-Family :Arial;
+	Font-size:14pt;
+	Font-weight:regular;
+	color :red;
+	}
+
+	.register_radio{
+	width: 92%;
+	height: 50px;
+	margin: auto;
+	margin-top: 15px;
+	color: white;
+	Font-size:18px;
+	}
+	/*-------------style.css--------------------*/
+	.button
+	{margin:auto;
+	width:70%;
+	height:40px;/*
+	border-style:solid;
+	border-width:1px;
+	border-color:green;*/
+	margin-bottom:25px;
+	}
+	.content_button1
+	{
+	margin:0 auto;
+	width:100%;
+	height:40px;
+	background:url('../images/button-with-arrow.png')no-repeat ;
+	background-size: 100% 100% ;/*
+	border-style:solid;
+	border-width:1px;
+	border-color:yellow;*/
+	display: inline-block;
+	cursor: pointer;
+	}
+	.content_button1:active
+	{
+
+	display: inline-block;
+
+	width:100%;
+	height:40px;
+	background:url('../images/grey_buttonarrow.png')no-repeat ;
+	background-size: 100% 100% ;
+	/*
+	border-style:solid;
+	border-width:1px;
+	border-color:green;
+	/*/
+	}
+	.button_text
+	{
+	width:90%;
+	margin: 0 auto;
+	height:22px;
+	Font-Family:Verdana;
+	Font-Weight:regular;
+	Font-Size:22px;
+	Color:white;
+	text-decoration:none;
+	text-align:center;
+	padding-top:3px;
+	}
+	.button2_text
+	{
+	width:90%;
+	margin: 0 auto;
+	height:22px;
+	Font-Family:Verdana;
+	Font-Weight:regular;
+	Font-Size:22px;
+	Color:white;
+	text-decoration:none;
+	text-align:center;
+	padding-top:3px;
+	}
+	.button3_text
+	{
+	width:90%;
+	margin: 0 auto;
+	height:22px;
+	Font-Family:Verdana;
+	Font-Weight:regular;
+	Font-Size:22px;
+	Color:white;
+	text-decoration:none;
+	text-align:center;
+	padding-top:3px;
+	}
+
+	/* footer  */
+	.footer
+	{
+	margin:0 auto;
+	width:75%;
+	border-style:solid;
+	border-width:2px;
+	border-color:black;
+	border-top-left-radius:1em;
+	border-top-right-radius:1em;
+	border-bottom-right-radius:0em;
+	border-bottom-left-radius:0em;
+	}
+	.footer_upper
+	{
+	width:100%;
+	Height:69px;
+	/*
+	border-style:solid;
+	border-width:1px;
+	border-color:black;/*/
+	}
+	.imgf
+	{
+	padding-top:20px;
+	padding-left:20px;
+	height:44px;
+	width:44px;
+	float:left;
+	}
+	.textf
+	{
+	padding-top:25px;
+	Font-Family:Verdana;
+	Font-Weight:Regular;
+	Font-Size:28px;
+	Color:black;
+	padding-left:20px;
+	float:left;
+	}
+	.footer_upper_left
+	{
+	width:49%;
+	Height:100%;
+	/*
+	border-style:solid;
+	border-width:1px;
+	border-color:black;/*/
+	padding:0px;
+	float:left;
+	}
+	.footer_upper_right
+	{
+	float:right;
+	width:49%;
+	Height:100%;
+	/*
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+	/*/
+	padding:0px;
+	}
+	.date
+	{
+
+	padding-top:30px;
+	float:right;
+	padding-right:30px;
+	Font-Family:Verdana;
+	Font-Weight:Regular;
+	Font-Size:26px;
+	Color:black;
+	}
+	/* footer-lower*/
+	.footer_lower
+	{
+	clear:both;
+	width:100%;
+	Height:70px;
+	/*border-style:solid;
+	border-width:1px;
+	border-color:black;*/
+	padding:0;
+	}
+	.imgf2
+	{
+	padding-top:10px;
+	padding-left:20px;
+	height:44px;
+	width:44px;
+	float:left;
+	}
+	.textf2
+	{
+	padding-top:10px;
+	Font-Family:Verdana;
+	Font-Weight:Regular;
+	Font-Size:28px;
+	Color:black;
+	padding-left:20px;
+	float:left;
+	}
+	.footer_lower_right
+	{
+	float:right;
+	width:49%;
+	Height:100%;
+	/*
+	border-style:solid;
+	border-width:1px;
+	border-color:black;/*/
+	padding-top:10px;
+	}
+	.day
+	{
+	float:right;
+	padding-right:100px;
+	Font-Family:Verdana;
+	Font-Weight:Regular;
+	Font-Size:26px;
+	Color:black;
+	}
+	
+	/*-------------style.css--------------------*/
+	
+}

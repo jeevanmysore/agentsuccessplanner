@@ -1,0 +1,574 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #fff url(../images/bg.png);
+}
+
+.toolbar
+{
+    display: block;
+    height: 37px;
+    width: 100%;
+    padding-top: 8px;
+    background: url(../images/top.png);    
+}
+
+.toolbar .back
+{
+    display: block;    
+    float: left;
+    height: 31px;
+    width: 63px;
+    margin-left: 15px;
+    background: url(../images/backsmall.png) no-repeat;
+}
+
+.toolbar .setting
+{
+    display: block;    
+    float: right;
+    height: 31px;
+    width: 38px;
+    margin-right: 15px;
+    background: url(../images/settingsmall.png) no-repeat;
+}
+
+.toolbar span
+{    
+    display: block;
+    text-align: center;
+    color: #dce2e3;
+    font: bold 15px 'Myriad Pro';
+    margin-top: 4px;
+    text-shadow: 1px 1px 2px #333;
+    text-transform: uppercase;
+}
+
+header
+{
+    display: block;
+    height: 70px;  
+    text-align: center; 
+    background: #f7b413 url(../images/logo.png) no-repeat center;   
+}
+
+#login
+{
+    background: #323333;
+    border-radius: 10px;
+    width: 94%;
+    margin: 15px auto;  
+    padding: 1px;      
+    
+}
+
+#login h3.title
+{
+    color: #fff;
+    font: 20px/35px Calibri;
+    text-align: center;
+    height: 39px;
+    margin: 0;
+}
+
+#login h3.title a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+#login h3.title .btregis
+{
+    float: left;
+    height: 28px;
+    width: 96px;
+    background: url(../images/regismall.png) no-repeat;
+    border: 0;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 5px;
+}   
+
+#login h3.title span
+{
+    float: right;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+#login table
+{
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 10px;
+    font: 20px Calibri;
+    color: #323333;
+}
+
+#login table td
+{
+    padding-bottom: 10px;
+}
+
+#login table input[type="text"], #login table input[type="password"]
+{
+    width: 94%;
+    height: 28px;
+    background: #e7e7e7;
+    border: 1px solid #bbbbbb;
+    padding: 0 10px;
+    font: 20px Tahoma;
+}
+
+#login table input[type="submit"]
+{
+    float: right;
+    height: 35px;
+    width: 47px;
+    background: url(../images/btgosmall.png) no-repeat;
+    border: 0;
+    cursor: pointer;
+}
+
+#login table ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#login table ul li
+{
+    display: block;
+    float: left;
+    width: 45%;
+    padding-bottom: 10px;
+    font: 14px Calibri;
+}
+
+#sublog
+{
+    font: 15px Calibri;
+    padding-top: 20px;
+}
+
+#sublog div
+{
+    float: left;
+}
+
+#sublog div a
+{
+    display: block;
+    padding-top: 10px;
+    text-decoration: none;
+    color: #323333;
+}
+
+#main ul
+{
+    padding: 0;
+    list-style: none;    
+}
+
+#main ul li
+{
+    display: block;
+    overflow: hidden;
+    width: 94%;
+    height: 45px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font: 16px/45px Calibri, Arial;    
+}
+
+#main ul li a
+{
+    display: block;
+    background: url(../images/menu.png) no-repeat top right;
+    background-size: 100% 45px;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+#main.view ul li a
+{
+    display: block;
+    background: url(../images/menu2.png) no-repeat top right;
+    background-size: 100% 45px;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+#main ul li a:hover, #main ul li.active a
+{
+    background: url(../images/menuactive.png) no-repeat top right;
+    background-size: 100% 45px;
+}
+
+#main.view ul li a:hover, #main.view ul li.active a
+{
+    background: url(../images/menu2active.png) no-repeat top right;
+    background-size: 100% 45px;
+    color: #f7b112;
+}
+
+#main.view ul li a strong
+{            
+    font-weight: normal;
+}
+
+#main.view ul li a span
+{
+    float: right;
+    margin-right: 10px;
+    width: 60px;
+    background: url(../images/doc.png) no-repeat left top;
+    text-align: right;
+}
+
+#main.transaction ul li a span
+{
+    width: 100px;
+}
+
+#main.transaction ul li a span input[type="text"], #main.transaction ul li a span select
+{
+    width: 80px;
+}
+
+#main.transaction ul li a span select
+{
+    width: 86px;
+    margin-right: 5px;
+    background: #363636;
+    color: #fff;
+    border: 1px solid #ccc;
+}
+
+#main.transaction ul li a span.date input[type="text"]
+{
+    width: 70px;
+}
+
+#main.transaction ul li a span.date img
+{
+    width: 21px;
+    float: right;
+    margin-right: -5px;
+    margin-left: 2px;
+    margin-top: 11px;
+    border: 0;
+}
+
+.todaymain
+{
+    clear: both;
+    display: block;    
+    background: #323333;
+    width: 94%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    font: 14px Calibri, Arial; 
+    padding-bottom: 1px; 
+}
+
+.todaymain h3
+{
+    height: 45px;
+    color: #fff;
+    font: 14px/45px Calibri, Arial;        
+    margin: 0;
+    padding-left: 55px;
+    background: url(../images/note.png) no-repeat 20px 10px;
+    background-size: 23px 21px;
+    font-weight: normal;
+}
+
+.todaymain h3 span
+{
+    float: right;
+    margin-right: 15px;
+}
+
+.todaymain div
+{
+    display: block;
+    margin: 1px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.todaymain div .to1
+{
+    display: block;
+    padding: 15px 15px 15px 55px;
+    background: url(../images/days.png) no-repeat 20px 10px;
+    background-size: 23px 21px;
+}
+
+.todaymain div .to1 span
+{
+    float: right;
+    margin-right: 10px;
+}
+
+footer
+{
+    display: block;
+    height: 75px;
+    background: url(../images/footer.png);
+}
+
+footer a
+{
+    display: block;
+    float: left;   
+    margin: 5px 10px;  
+    color: #111;
+    text-shadow: 1px 1px 1px #ccc;
+    font: bold 13px Arial;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    width: 15%;
+}
+
+footer a.active, footer a:hover
+{
+    background: #1a1a1a;    
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+footer .control i, footer .welcome i, footer .list i, footer .bottons i
+{
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    margin-bottom: 5px;
+    background-color: #333;  
+    background: url(../images/tay.png) no-repeat bottom center;
+    background-size: 32px 64px;
+}
+
+footer .welcome i
+{
+    background: url(../images/sao.png) no-repeat bottom center;
+    background-size: 32px 64px;
+}
+
+footer .welcome.active i, footer .welcome:hover i
+{
+    background: url(../images/sao.png) no-repeat top center;
+    background-size: 32px 64px;
+}
+
+footer .control.active i, footer .control:hover i
+{
+    background: url(../images/tay.png) no-repeat top center;
+    background-size: 32px 64px;
+}
+
+footer .list i
+{
+    background: url(../images/list.png) no-repeat bottom center;
+    background-size: 32px 64px;
+}
+
+footer .list.active i, footer .list:hover i
+{
+    background: url(../images/list.png) no-repeat top center;
+    background-size: 32px 64px;
+}
+
+
+footer .bottons i
+{
+    background: url(../images/cuc.png) no-repeat bottom center;
+    background-size: 32px 64px;
+}
+
+footer .bottons.active i, footer .bottons:hover i
+{
+    background: url(../images/cuc.png) no-repeat top center;
+    background-size: 32px 64px;
+}
+
+.pros, .tip
+{
+    display: block;
+    width: 94%;
+    margin: auto;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background: #f7d283;
+    color: #797979;
+    text-transform: uppercase;
+    text-align: center;
+    font: bold 18px Calibri;
+}
+
+.tip
+{
+    background: #aba8a8;
+    color: #000;
+    padding-top: 0;
+    font: 20px Calibri;
+    overflow: hidden;
+    
+}
+
+.tip h3
+{
+    margin: 0;
+    height: 35px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: normal;
+    background: url(../images/h3.png) no-repeat bottom center;    
+}
+
+.cal
+{
+    background: #f7ab10;
+    color: #000;    
+    text-align: left;
+}
+
+.cal h3
+{
+    margin: 0;
+    margin-left: 10px;  
+    font-size: 16px;  
+}
+
+.cal h3 span
+{
+    float: right;
+    margin-right: 10px;
+}
+
+.view input[type="text"]
+{
+    width: 37px;
+    background: #363636;
+    color: #fff;
+    padding-left: 2px;
+    border: 1px solid #222;
+    margin-left: 2px;
+}
+
+.save
+{
+    display: block;
+    width: 96px;
+    height: 36px;
+    background: url(../images/save.png) no-repeat;
+    margin: auto;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+.saveand
+{
+    display: block;
+    width: 194px;
+    height: 36px;
+    background: url(../images/saveand.png) no-repeat;
+    margin: auto;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+.btedit, .bthome, .btsale
+{
+    border: 0;
+    width: 85px;
+    height: 32px;
+    background: url(../images/edit.png);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.bthome
+{
+    background: url(../images/home.png);
+}
+
+.btsale
+{
+    width: 110px;
+    background: url(../images/sale.png);
+}
+
+.edittran, .edittran2
+{
+    display: block;
+    width: 200px;    
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.edittran2
+{
+    width: 225px;
+}
+
+.pretran
+{
+    background: none repeat scroll 0 0 #f7af11;    
+    color: #000;
+    text-shadow: 1px 1px 3px #fff;
+    display: block;
+    font: bold 19px Calibri;
+    margin: auto auto 15px;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;    
+}
+
+.tabletran
+{
+    width: 94%;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.tabletran td, .tabletran th
+{
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 10px;
+    font: 11px 'Myriad Pro';
+    text-align: center;
+}
+
+.tabletran th
+{
+    background: #fff;
+}
+
+.tabletran td a
+{
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.tabletran td a:hover
+{
+    text-decoration: underline;
+}

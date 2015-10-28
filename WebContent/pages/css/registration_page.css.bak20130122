@@ -1,0 +1,576 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+body
+	{
+		margin:0 auto;
+		height:100%;
+		background:url('../images/bg.png')repeat-x ;
+		background-size: 100% 100%;
+		width:100%;
+	}
+	.header
+	{
+	height:100%;
+	margin-bottom:30px;/*
+	border-style:solid;
+	border-width:5px;
+	border-color:red;*/
+	/*
+	background:url('../images/bg.png')no-repeat ;
+	background-size: 100% ;*/
+	}
+	/* ---------- LOGO----------*/
+	.logo
+	{
+	margin:0 auto;
+	/*border-style:solid;
+	border-width:1px;
+	border-color:red;*/
+	width:180px;
+	height:165px;
+	padding-top:20px;
+	padding-bottom:2px;
+	}
+	/* Logo image */
+	.logo_img
+	{
+	height:100%;
+	width:100%;
+	}
+	.logo_subtitle
+	{
+	width:100%;
+	height:80px;
+	/*
+	border-style:solid;
+	border-width:1px;
+	border-color:blue;
+	*/
+	margin-top:10px;
+	padding-top:10px;
+	margin-bottom:35px;
+	}
+	.logo_subtitle_img
+	{
+	width:97%;
+	height:80px;
+	padding-left:30px;
+	margin :0 auto;
+	}
+	.content_top
+	{
+	width: 450px;
+	height: 150px;
+	position: absolute;
+	/*border-style: solid;
+	border-width: 2px;
+	border-color: black;*/
+	top: -70px;
+	left: 347px;
+	background:url('../images/login_button.png')no-repeat ;
+	background-size: 100% 100% ;
+	}
+	.login
+	{
+	padding-top:23px;
+	Font-Family :Myriad Pro;
+	Font-size :52pt;
+	Font-weight:regular ;
+	color:white;
+	text-align:center;
+	}
+	.username
+	{
+	height:30px;
+	width:150px;
+	padding-top:35px;
+	padding-left:20px;
+	Font-Family :Arial;
+	Font-size: 28pt;
+	Font-weight: regular;
+	color :white;
+	/* border-style: solid;
+	border-width: 2px;
+	border-color: red;*/
+	}
+	.username_input
+	{
+	height:80px;
+	width: 685px;
+	position: relative;
+	left: 20px;
+	font-size: 28px;
+	top: 8px;
+	background:url('../images/input_field.png') ;
+	background-size: 100% 100% ;
+	border:none;
+	}
+	
+	.password
+	{
+	height:30px;
+	padding-top:35px;
+	padding-left:20px;
+	Font-Family :Arial;
+	Font-size: 38px;
+	Font-weight: regular;
+	color :white;
+	/* border-style: solid;
+	border-width: 2px;
+	border-color: red;*/
+	}
+	.password_input
+	{
+	height:80px;
+	width: 685px;
+	position: relative;
+	left: 20px;
+	top: 8px;
+	background:url('../images/input_field.png') ;
+	background-size: 100% 100% ;
+	border:none;
+	}
+	.content
+	{
+	width: 95%;
+	height: 1000px;
+	position: relative;
+	margin: 0 auto;
+   /* border-style: solid;
+	border-width: 2px;
+	border-color: black;*/
+	
+	background:url('../images/top_bg.png')no-repeat ;
+	background-size: 100% 100% ;
+	}
+	
+	.go
+	{
+	height: 55px;
+	width: 120px;
+	position: relative;
+	left: 39px;
+	top: 17px;
+	padding-top: 10px;
+	background: url('../images/register_button.png');
+	background-size: 100% 100%;
+	padding-left: 0px;
+	}
+		
+	.go input[type="submit"]{
+		background: transparent;
+		border: none;
+		color: white;
+		cursor: pointer;
+		Font-size: 12pt;
+		position: relative;
+		top: -4px
+		}
+	
+	.go_text
+	{
+	Font-Family :Helvetica(OT1);
+	Font-size : 22pt;
+	Font-weight : CE Bold COndensed;
+	color :white;
+	text-align:center;
+	height: 100%;
+	width: 100%;
+	}
+	
+	.content_bottom
+	{
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	left: 58;
+	bottom: -84px;
+	background: url('../images/bottom_ bg.png')no-repeat;
+	background-size: 100% 100%;
+	}
+	.already
+	{
+	height: 20px;
+	width: 200px;
+	left: 250px;
+	top: -184px;
+	positon: absolute;
+	Font-Family: Helvetica(OT1);
+	Font-size: 20px;
+	Font-weight: CE Bold COndensed;
+	color: white;
+	}
+	.already1
+	{
+	position: absolute;
+	top: 32px;
+	left: 420px;
+
+	Font-Family :Helvetica(OT1);
+	Font-size : 25px;
+	Font-weight : CE Bold COndensed;
+	color :white;
+	}
+	.bottom_img
+	{
+	height: 75px;
+	width: 142px;
+	position: relative;
+	left: 39px;
+	top: 17px;
+	padding-top: 10px;
+	background: url('../images/register_button.png');
+	background-size: 100% 100%;
+	padding-left: 25px;
+	}
+	.bottom_img_text
+	{
+	width:50px;
+	height:55 px;
+	Font-Family :Myriad Pro;
+	Font-size :22pt;
+	Font-weight:regular ;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	}
+	
+	.do
+	{
+	height: 35px;
+	width: 250px;
+	position: relative;
+	left: 355px;
+	top: -50px;
+	
+	
+	padding-top:7px;
+	}
+	.do_text
+	{
+	Font-Family :Arial;
+	Font-size:24pt;
+	Font-weight:regular;
+	color :black;
+	text-align: center;
+	text-decoration:none;
+	}
+	/*radha:added the css for error msg*/	
+	.error_msg{
+	height: 35px;
+	width: 94%;
+	margin:auto;
+	margin-bottom: 100px;
+	
+	}
+	.text_error{
+	width:100%;
+	height:35px;
+	margin:auto;
+	color:red;
+	text-align:center;
+	Font-Family :Arial;
+	Font-size:24pt;
+	Font-weight:regular;
+	}
+	.register_radio{
+	width: 92%;
+	height: 50px;
+	margin: auto;
+	margin-top: 35px;
+	color: white;
+	Font-Family :Arial;
+	Font-size:24pt;
+	Font-weight:regular;
+	}
+	.big {
+		width:35px;
+	}
+}
+
+/*---------------------------------------------------*/
+
+@media only screen and (min-device-width: 500px) {
+	body
+	{
+		margin:0 auto;
+		height:100%;
+		background:url('../images/bg.png')no-repeat ;
+		background-size: 100% ;
+		width:100%;
+	}
+	 .header
+	{
+	height:100%;
+	margin-bottom:30px;/*
+	border-style:solid;
+	border-width:5px;
+	border-color:red;*/
+	/*
+	background:url('../images/bg.png')no-repeat ;
+	background-size: 100% ;*/
+	}
+	/* ---------- LOGO----------*/
+	.logo
+	{
+	margin:0 auto;/*
+	border-style:solid;
+	border-width:1px;
+	border-color:red;*/
+	width:70px;
+	height:80px;
+	padding-top:20px;
+	padding-bottom:2px;
+	}
+	/* ---------- LOGO SUBTITLE----------*/
+	.logo_subtitle
+	{
+	width:100%;
+	text-align:center;
+	height:20px;/*
+	border-style:solid;
+	border-width:1px;
+	border-color:blue;*/
+	padding-bottom:35px;
+	padding-top:5px;
+	}
+	.logo_img
+	{
+	margin:0 auto;
+	}
+	.logo_subtitle_img
+	{
+	width:37%;
+	height:40px;
+	margin :0 auto;
+	/*padding-left:420px; */
+	}
+	.content_top
+	{
+	width: 45%;
+	height: 70px;
+	position: absolute;
+	top: -36px;
+	left: 50%;
+	/*border-style: solid;
+	border-width: 2px;
+	border-color: black;*/
+	background:url('../images/login_button.png')no-repeat ;
+	background-size: 100% 100% ;
+	}
+	.login
+	{
+	padding-top:18px;
+	Font-Family :Myriad Pro;
+	Font-size :1.4em;
+	Font-weight:regular ;
+	color:white;
+	text-align:center;
+	}
+	.username
+	{
+	height:20px;
+	width:100px;
+	padding-top:35px;
+	padding-left:20px;
+	Font-Family :Arial;
+	Font-size: 14pt;
+	Font-weight: regular;
+	color :white;
+	/* border-style: solid;
+	border-width: 2px;
+	border-color: red;*/
+	}
+	.username_input
+	{
+	height:50px;
+	width: 77%;
+	position: relative;
+	left: 20px;
+	top: 8px;
+	padding-left:10px;
+	font-size: 22px;
+	background:url('../images/input_field.png') ;
+	background-size: 100% 100% ;
+	border:none;
+	}
+	
+	.password
+	{
+	height:20px;
+	padding-top:35px;
+	padding-left:20px;
+	Font-Family :Arial;
+	Font-size: 14pt;
+	Font-weight: regular;
+	color :white;
+	/* border-style: solid;
+	border-width: 2px;
+	border-color: red;*/
+	}
+	.password_input
+	{
+	height:50px;
+	width: 77%;
+	position: relative;
+	left: 20px;
+	padding-left:10px;
+	top: 8px;
+	Font-size: 22px;
+	background:url('../images/input_field.png') ;
+	background-size: 100% 100% ;
+	border:none;
+	}
+	.content
+	{
+	width: 37%;
+	height: 675px;
+	position: relative;
+   /* border-style: solid;
+	border-width: 2px;
+	border-color: black;*/
+	margin: 0 auto;
+	background:url('../images/top_bg.png')no-repeat ;
+	background-size: 100% 100% ;
+	}
+	
+	.go
+	{
+	height: 55px;
+	width: 120px;
+	position: relative;
+	left: 7%;
+	top: 17px;
+	padding-top: 10px;
+	background: url('../images/register_button.png');
+	background-size: 100% 100%;
+	padding-left: 0px;
+	}
+		
+	.go input[type="submit"]{
+	background: transparent;
+	border: none;
+	color: white;
+	cursor: pointer;
+	Font-size: 12pt;
+	position: relative;
+	top: -4px
+		}
+	
+	.go_text
+	{
+	Font-Family :Helvetica(OT1);
+	Font-size : 22pt;
+	Font-weight : CE Bold COndensed;
+	color :white;
+	text-align:center;
+	height: 100%;
+	width: 100%;
+	}
+	
+	.already
+	{
+	/*height: 20px;
+	width: 200px;
+	left: 250px;
+	top: -184px;
+	positon: absolute;
+	Font-Family: Helvetica(OT1);
+	Font-size: 20px;
+	Font-weight: CE Bold COndensed;
+	color: white;*/
+	}
+	.already1
+	{
+	position: absolute;
+	top: 28%;
+	left: 47%;
+	width:48%;
+	Font-Family :Helvetica;
+	Font-size : 20px;
+	Font-weight : CE Bold COndensed;
+	color :white;
+	text-align: left;
+	}
+	.content_bottom
+	{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	left:-2px;
+	bottom: -74px;
+	background: url('../images/bottom_ bg.png')no-repeat;
+	background-size: 100% 100%;
+	}
+	.bottom_img
+	{
+	height: 55px;
+	width: 92px;
+	position: relative;
+	left: 39px;
+	top: 17px;
+	padding-top: 10px;
+	background: url('../images/register_button.png');
+	background-size: 100% 100%;
+	padding-left: 25px;
+	}
+	.bottom_img_text
+	{
+	width:50px;
+	height:55 px;
+	Font-Family :Myriad Pro;
+	Font-size :12pt;
+	Font-weight:regular ;
+	color:white;
+	text-align:center;
+	text-decoration:none;
+	}
+	.do
+	{
+	height:25px;
+	width:150px;
+	position:relative;
+	left:255px;
+	top:-50px;
+	border-style:solid;
+	border-width:1px;
+	border-color:red;
+	padding-top:7px;
+	}
+	.do_text
+	{
+	Font-Family :Arial;
+	Font-size:14pt;
+	Font-weight:regular;
+	color :black;
+	text-align: center;
+	text-decoration:none;
+	}
+	/*radha:added the css for error msg*/	
+	.error_msg{
+	height: 35px;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 10px;
+	}
+	.text_error{
+	width:37%;
+	margin:auto;
+	height:30px;
+	
+	text-align:center;
+	Font-Family :Arial;
+	Font-size:14pt;
+	Font-weight:regular;
+	color :red;
+	}
+
+	.register_radio{
+	width: 92%;
+	height: 50px;
+	margin: auto;
+	margin-top: 15px;
+	color: white;
+	Font-size:18px;
+	}
+	
+}

@@ -1,0 +1,222 @@
+<%@page import="java.util.Date"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
+     	<%
+		HttpSession ses=request.getSession();
+		String user=ses.getAttribute("user").toString();
+		Date date;  
+		    String result;  
+		    SimpleDateFormat formatter;  
+		    formatter = new SimpleDateFormat("MM/dd/yy");  
+		    date = new Date();  
+		    result = formatter.format(date);
+		
+	%>
+    
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Close Transaction</title>
+	<link rel="stylesheet" type="text/css" href="css/close_transaction.css">
+		<meta charset="utf-8" />
+		
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		
+		
+		<script>
+		
+		var salesPrice;
+		var commission;
+		$(function() {
+			$( "#datepicker" ).datepicker({
+				showOn: "button",
+				buttonImage: "images/date_icon.png",
+				buttonImageOnly: true
+			});
+		});
+		function formatNumber(number){		
+			number       = number.toString(); 
+			var simpleNumber = '';  
+			// Strips out the dollar sign and commas. 
+			for (var i = 0; i < number.length; ++i) 
+			{ 
+				if ("0123456789.".indexOf(number.charAt(i)) >= 0) 
+					simpleNumber += number.charAt(i); 
+			} 		 
+			number = parseFloat(simpleNumber); 
+			return number;
+		}
+		
+		
+		var type="sale";
+		function setType(e){
+			type=e.value;
+		}
+		
+		$(document).ready(function(){		 
+			
+				
+			
+			$("#recordBtn").click(function(){
+				$.ajax({
+					type:"POST",
+					url:"/agentsuccessplanner/transactionController",
+					data:{
+							date:$('#datepicker').val(),
+							type:type,
+							salesPrice:salesPrice,
+							commission:commission				
+						 },
+				   success: function(data){
+					   alert("Saved Successfully");
+			       },
+			       error: function (request, status, error) {
+			    	   if(error==="Bad Request"){
+			    		   alert("Failed to insert Data");
+			    		   
+			    	   }
+			    	   else
+			           alert("Problem Saving Details, Try Again later");
+			       }
+				   
+				});
+			});	
+			
+		 
+		 });
+		
+		function validate(){
+			var sales=document.getElementById("salesPrice").value();
+			var com=document.getElementById("commission").value();
+			
+			if(sales==="" || com===""){
+				return false;				
+			}
+			else
+				return true;
+		}
+		function fill(e){
+			if(e.value===""){
+				e.value=0.0;
+			}
+			fillData();
+			
+		}
+
+		function clearText(e){
+			
+		}
+		
+		function goHome(){
+		location.href='/agentsuccessplanner/pages/userHome.jsp';
+		}
+		
+		 function isNumberKey(evt)
+		 {
+			var charCode =  event.keyCode
+			if (charCode > 31 && (charCode < 43 || charCode > 57 ) )
+			   return false;
+		  
+			return true;
+		 }
+		 
+		 function fillData(){			
+			salesPrice=formatNumber(document.getElementById("salesPrice").value);
+			commission=formatNumber(document.getElementById("commission").value);		 
+		 }
+
+		</script>
+	</head> 
+	
+	
+	
+	
+    <!-- Body-->
+	<body>
+		<div class="header">
+		 <!------- LOGO SUBTITLE --------------->
+		 	<div class="logo_subtitle">
+				<div class="logo">
+					<div class="back_img">
+						<a href="./userHome.jsp"><img src="images/back_button.png" class="back"></img></a>
+					</div>
+					<img src="images/logo.png" class="logo_img" ></img>
+				</div>
+				<div class="subtitle">
+					<img src="images/sub_heading.png" class="logo_subtitle_img" ></img>		
+				</div>
+			</div>
+			<!------- LOGO SUBTITLE1 --------------->
+			<div class="logo_subtitle1">
+			    <!---- view  ---->
+				<div class="view" >
+					 Enter/Edit a transaction 
+				</div>
+				<div class="home_img">
+					<a href="./userHome.jsp"> 
+						<img src="images/home_icon.png" class="home_img_detail"></img>
+					</a>
+				</div>
+			</div>	
+		<!------- CONTENT --------------->
+			<form action="" method="" class="content">
+				<div id="container_fix">
+				<div class="content_data">Enter Date
+				</div>
+				<div class="content_data1">
+					<div  class="content_data1_2"><input  id="datepicker" name="date" class="content_data1_input" value="<%= result %>" type="text"></input>
+					</div>
+				</div>
+				
+				<div class="record">
+					<span class="content_record" >
+					Transaction Type
+					</span>
+					<select class="selection" name="type" id="type" onchange="setType(this);" >
+						<option value="sale">Sale</option>
+						<option value="buy">Buy</option>
+					</select>
+					<div class="record2">
+					</div>
+				</div>
+				
+				<div class="data">
+				    
+					<div class="data_left">Sales Price
+					</div>
+					<div class="data_right">
+						<div class="data_right1">$
+						</div>
+						
+						<div class="data_right2"><input class="content_data1_input" value="0" name="salesPrice" id="salesPrice"  type="text" required="required" onkeypress="return isNumberKey(event)" onblur="fill(this);" onclick="clearText(this);" onfocus="clearText(this);" ></input>
+						
+						</div>
+					</div>
+				</div>
+				<div class="data">
+				    <div class="data"></div>
+					<div class="data_left">Commission Earned
+					</div>
+					<div class="data_right">
+						<div class="data_right1">$
+						</div>
+						
+						<div class="data_right2"><input class="content_data1_input" value="0" name="commission" id="commission" type="text"  onkeypress="return isNumberKey(event)" onblur="fill(this);"  onclick="clearText(this);" onfocus="clearText(this);"></input>
+						</div>
+					</div>
+				</div>
+				
+				<div class="record4">
+					<input type="button" class="record3" value="RECORD SALE" id="recordBtn" ></input>
+					<input type="button" class="record3" value="HOME" onclick="goHome();" ></input>
+				</div>
+				</div>
+			</form>
+		</div>
+		</div>
+	</body>
+</html>
